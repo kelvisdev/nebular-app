@@ -1,0 +1,42 @@
+<ion-content class="ion-padding ion-text-center" [fullscreen]="true">
+
+  <div class="logo">
+    <img
+      src="https://cdn.shopify.com/s/files/1/0016/4993/4385/files/Logo_2x_d516276e-6abf-4754-91ac-5030d79b339a_1405x.png?v=1549980376"
+      alt="">
+  </div>
+
+  <ion-card>
+    <ion-card-content>
+      <div class="form">
+        <ion-item lines="none">
+          <ion-label position="floating">Username</ion-label>
+          <ion-input [(ngModel)]="credential.username"
+                     placeholder="Username">
+          </ion-input>
+        </ion-item>
+
+        <ion-item lines="none">
+          <ion-label position="floating">Password</ion-label>
+          <ion-input [(ngModel)]="credential.password"
+                     placeholder="Password"
+                     type="password">
+          </ion-input>
+        </ion-item>
+
+
+        <ion-button color="primary"
+                    expand="block"
+                    [routerLink]="['/home']">
+          Login
+        </ion-button>
+      </div>
+
+      <ion-button fill="clear">
+        New to AKVEO? Join now
+      </ion-button>
+
+    </ion-card-content>
+  </ion-card>
+
+</ion-content>

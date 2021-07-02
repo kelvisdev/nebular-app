@@ -1,5 +1,8 @@
 {
   "name": "nebular-app",
-  "integrations": {},
+  "integrations": {
+    "cordova": {},
+    "capacitor": {}
+  },
   "type": "angular"
 }
